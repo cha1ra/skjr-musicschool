@@ -1,0 +1,186 @@
+/*
+Theme Name: Sakajiri Music School
+Theme URL: sakajirimusic.sakura.ne.jp
+Description: Theme for Sakajiri Music School
+Author: Aira Sakajiri
+Version: 1.0.0
+Tags: LandingPage, Music
+*/
+
+/*------
+Variable
+------*/
+
+$space1: 4px;
+$space2: 8px;
+$space3: 12px;
+$space4: 16px;
+$space5: 20px;
+$space6: 24px;
+
+$navbar-height: 140px;
+
+$primary: #EA3CAD;
+
+/*------
+Global CSS
+------*/
+
+body { 
+  font-family: "M PLUS Rounded 1c"; 
+}
+
+.container {
+  margin: 0 $space6;
+}
+
+
+section {
+  padding: $space6 0;
+  // margin-top:-$navbar-height;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-top: $space2;
+  padding-bottom: $space4;
+  text-align: center;
+  span {
+    border-bottom: $primary 4px solid;
+  }
+}
+
+
+.parallax-window {
+  min-height: 200px;
+  background: transparent;
+}
+
+.parallax-slider {
+  top: 0;
+  left: 0;
+}
+
+.space {
+  padding:$space2;
+}
+
+/*------
+Header Settings
+------*/
+
+header {
+  position: fixed;
+  background-color: #fff;
+}
+
+.header-logo-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.header-logo-area-img {
+  width: 30%;
+  min-width: $navbar-height;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  padding: $space6 0;
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    li {
+      width: 25%;
+      text-align: center;
+      a, a:visited {
+        text-decoration: none;
+        color:#ae0000;
+      }
+    }
+  }
+}
+
+
+/*------
+Movie Area
+------*/
+
+#movie {
+  padding-top:140px;
+}
+
+
+/*------
+Info Area
+------*/
+
+#info-area {
+  h3 {
+    font-size: 1.3rem;
+    padding-top: $space2;
+    padding-bottom: $space4;
+    text-align: center;
+    span {
+      border-bottom: $primary 2px solid;
+    }
+  }
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.blog-card {
+  width: 25%;
+  margin:$space1;
+}
+
+
+/*------
+About Area
+------*/
+
+.intro {
+  padding-top:$space2;
+  padding-bottom: $space4;
+  background-color: rgba($color: #000, $alpha: 0.6);
+  color: #fff
+}
+
+.intro p {
+  padding: $space2
+}
+
+.profile {
+  background-color: rgba($color: #000, $alpha: 0.6);
+  margin: $space4 0;
+  padding: $space2 0;
+  color: #fff;
+  h3 {
+    margin-bottom:$space2;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.profile-img {
+  max-width: 200px;
+  width: 25%;
+  height: auto;
+}
+
+.profile-desc {
+  padding-left: $space2;
+}
